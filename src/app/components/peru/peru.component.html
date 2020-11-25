@@ -1,0 +1,20 @@
+<div class="Peru">
+    <table class="table">
+        <thead class="thead-dark text-center">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Abrevicacion</th>
+                <th scope="col">codigo</th>
+                <th scope="col">Capital</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of dataPeru">
+                <th>{{post.name}}</th>
+                <td>{{post.alpha2Code}}</td>
+                <td>{{post.callingCodes}}</td>
+                <td>{{post.capital}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
