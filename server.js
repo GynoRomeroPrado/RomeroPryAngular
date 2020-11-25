@@ -2,7 +2,8 @@
   const path = require('path');
   const app = express();
 
-  app.use(express.static('./dist/romeropryangular'));
+  //app.use(express.static('./dist/romeropryangular'));
+  //app.use(express.static(__dirname + '/dist'));
 
   app.get('/*', (req, res) =>
       const index = path.join(__dirname, 'build', 'index.html');
