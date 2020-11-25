@@ -5,8 +5,8 @@
   app.use(express.static('./dist/romeropryangular'));
 
   app.get('/*', (req, res) =>
-      res.sendFile('index.html', { root: 'dist/romeropryangular/' }),
-
+      const index = path.join(__dirname, 'build', 'index.html');
+      res.sendFile(index);
   );
 
   app.listen(process.env.PORT || 8080);
