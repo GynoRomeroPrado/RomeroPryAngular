@@ -10,10 +10,10 @@
       res.sendFile(index);
   );
 */
-  app.use(express.static(__dirname + '/dist/romero-pry-angular'));
+  app.use(express.static(__dirname + '/dist/RomeroPryAngular'));
 
   app.get('/*', function(req,res) {
-      res.sendFile(path.join(__dirname+'/dist/romero-pry-angular/index.html'));
+      res.sendFile(path.join(__dirname+'/dist/RomeroPryAngular/index.html'));
   });
 
   app.listen(process.env.PORT || 8080);
